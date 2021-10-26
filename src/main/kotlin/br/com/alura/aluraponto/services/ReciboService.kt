@@ -10,15 +10,22 @@ class ReciboService(
     private val repository: ReciboRepository
 ) {
 
-    fun findAll(): List<Recibo> {
-        return repository.recibos
+    fun findAll(): Iterable<Recibo> {
+        return repository.findAll()
     }
 
     fun save(recibo: Recibo): Recibo {
-        return repository.save(recibo)
+        return repository.save(
+            Recibo(
+                id = recibo.id,
+                status = true,
+                data = recibo.data,
+                localizacao = recibo.localizacao
+            )
+        )
     }
 
     fun delete(id: UUID) {
-        repository.delete(id)
+        repository.deleteById(id)
     }
 }

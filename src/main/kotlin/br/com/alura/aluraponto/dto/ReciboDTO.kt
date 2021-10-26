@@ -12,7 +12,7 @@ class ReciboResponse(
     val status: Boolean = recibo.status,
     @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
     val data: LocalDateTime = recibo.data,
-    val localizacao: Localizacao = recibo.localizacao
+    val localizacao: Localizacao? = recibo.localizacao
 )
 
 class ReciboRequest(
@@ -20,7 +20,7 @@ class ReciboRequest(
     status: Boolean,
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy HH:mm")
     data: LocalDateTime,
-    localizacao: Localizacao
+    localizacao: Localizacao?
 ) {
     val recibo: Recibo = Recibo(
         id, status, data, localizacao

@@ -32,9 +32,13 @@ class RecibosController(
     }
 
     @DeleteMapping("{id}")
-    fun delete(@PathVariable id: UUID) {
-        service.delete(id)
-        ResponseEntity.ok()
+    fun delete(@PathVariable id: UUID): ResponseEntity<Any> {
+        return try {
+            service.delete(id)
+            ResponseEntity.ok().build()
+        } catch (e: Exception) {
+            ResponseEntity.notFound().build()
+        }
     }
 
 }
