@@ -129,19 +129,19 @@ b.c.a.a.AluraPontoApplicationKt          : Started AluraPontoApplicationKt in 6.
 
 A partir desse momento, é só acessar a baseUrl (por padrão "http://localhost:8080") via navegador que apresentará a página inicial da aplicação!
 
-**Observações**: evite rodar o executável em algum local que exija mais privilégios para executar ou criar arquivos.
+**Observações**: evite rodar o JAR em algum local que exija mais privilégios para executar ou criar arquivos.
 
 ## 🧪 Testando a API com o Postman
 
 Você pode testar a aplicação utilizando o Postman também, você pode [acessar essa collection com todos os exemplos](https://go.postman.co/workspace/Alex-Felipe~05a58c64-6e22-44c6-b86a-c8f1802da9a7/collection/643343-9e595479-bfa5-438f-af9a-ee3ce7eeae83).
 
-## 📝 Mais detalhes de execução do projeto
+## 📝 Modificando porta de execução da aplicação
 
-Por padrão o Spring Boot vai rodar a aplicação na porta `8080`, mas é possível modificar a porta caso seja necessário
+Por padrão o Spring Boot vai rodar a aplicação na porta `8080`, mas é possível modificar a porta caso seja necessário:
 
-### Modificando porta via código fonte
+### Código fonte
 
-No arquivo `application-dev.yml` modifique o valor da `port: ${port:8080}` para um valor esperado:
+No arquivo `application-dev.yml`, modifique o valor da `port: ${port:8080}` para um valor esperado:
 
 ```
 server:
@@ -150,17 +150,17 @@ server:
 
 > Vamos considerar a modificação para a porta nas amostras `8081`.
 
-### Via task `bootRun` do Gradle
+### Task `bootRun` do Gradle
 
-Também é possível executar a seguinte task do gradle para executar o projeto em uma outra porta:
+Também é possível executar o projeto via task `bootRun` do Gradle. Além de rodar o projeto, é possível modificar a porta de execução:
 
 ```
 ./gradlew bootRun --args='--server.port=8081
 ```
 
-### Modificando porta com o JAR executável
+### JAR executável
 
-Além da execução via código, também é possível modificar a porta via command line pelo arquivo jar:
+Há também a possibilidade de modificar a porta via command line pelo arquivo jar:
 
 ```
 java -jar nomeDoArquivo.jar --server.port=8081
