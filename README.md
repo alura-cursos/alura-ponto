@@ -105,7 +105,9 @@ O projeto pode ser acesso de duas maneiras diferente:
 
 ### Código fonte
 
-Para código fonte, você precisa de uma IDE compatível com o Gradle e com o Spring Boot utilizando Kotlin. Para esse projeto foi utilizado o IntelliJ IDEA 2021.2.3, você pode usar essa versão da IDE para garantir a compatibilidade ou uma versão mais ou outra ferramenta de sua preferência. Caso opte pelo IntelliJ, na tela de launcher, acesse a opção **Open** e procure o projeto, selecione-o e clique em **OK**. (Caso baixar o arquivo zip, lembre-se de descompactá-lo antes de procurar)
+Para código fonte, você precisa de uma IDE compatível com o Gradle e com o Spring Boot utilizando Kotlin. Para esse projeto foi utilizado o IntelliJ IDEA 2021.2.3, você pode usar essa versão da IDE para garantir a compatibilidade ou uma versão mais recente ou outra ferramenta de sua preferência. 
+
+Caso opte pelo IntelliJ, na tela de launcher, acesse a opção **Open** e procure o projeto, selecione-o e clique em **OK**. (Caso baixar o arquivo zip, lembre-se de descompactá-lo antes de procurar)
 
 Após o IntelliJ finalizar todas as tasks de indexação e do Gradle, acesse o arquivo `src\main\kotlin\br\com\alura\aluraponto\AluraPontoApplication.kt` e rode a função `main()`. Ao executar deve apresentar uma mensagem no console indicando que a aplicação foi inicializada, como por exemplo:
 
