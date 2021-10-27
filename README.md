@@ -1,3 +1,5 @@
+![Thumbnail](https://user-images.githubusercontent.com/8989346/139091049-102cc4a1-18b9-4f7b-979f-c7e824d6f84e.png)
+
 # Alura Ponto API
 
 REST API para gerenciar registro de pontos. A aplicação foi desenvolvida em Kotlin utilizando o Spring Boot e versão do Java 11
