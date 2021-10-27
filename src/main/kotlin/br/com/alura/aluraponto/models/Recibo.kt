@@ -14,4 +14,8 @@ class Recibo(
     val data: LocalDateTime = LocalDateTime.now(),
     @Embedded
     val localizacao: Localizacao? = null
-)
+) {
+    override fun toString(): String {
+        return "Recibo(id=$id, status=$status, data=$data, localizacao=$localizacao)"
+    }
+}

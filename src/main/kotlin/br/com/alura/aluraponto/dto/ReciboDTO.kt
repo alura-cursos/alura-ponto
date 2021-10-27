@@ -13,7 +13,11 @@ class ReciboResponse(
     @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
     val data: LocalDateTime = recibo.data,
     val localizacao: Localizacao? = recibo.localizacao
-)
+) {
+    override fun toString(): String {
+        return "ReciboResponse(id=$id, status=$status, data=$data, localizacao=$localizacao)"
+    }
+}
 
 class ReciboRequest(
     id: UUID = UUID.randomUUID(),
@@ -25,4 +29,9 @@ class ReciboRequest(
     val recibo: Recibo = Recibo(
         id, status, data, localizacao
     )
+
+    override fun toString(): String {
+        return "ReciboRequest(recibo=$recibo)"
+    }
+
 }
