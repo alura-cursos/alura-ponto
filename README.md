@@ -35,7 +35,7 @@ A aplicação salva, lista e remove registros de pontos. Todos os comportamentos
 ]
 ```
 
-- `POST` - "baseUrl/recibos": recebe um recibo via corpo da requisição, salva ou altera (se tiver um id existente) com o `status` `true` e retorna o objeto que foi salvo. -> "baseUrl/recibos"
+- `POST`: recebe um recibo via corpo da requisição, salva ou altera (se tiver um id existente) com o `status` `true` e retorna o objeto que foi salvo. -> "baseUrl/recibos"
 ```
 //exemplo de requisição
 //header: Content-Type: application/json
@@ -65,11 +65,12 @@ A aplicação salva, lista e remove registros de pontos. Todos os comportamentos
 ```
 
 - `DELETE`: Remove o recibo a partir do id. -> "baseUrl/recibos/{id}"
+    - Retorna status code 200 se a remoção deu certo e 404 caso o recibo não exista.
 
 ```
 //exemplo de requisição "localhost:8080/recibos/20ecb3a7-d499-4496-b246-879584c17881"
 ```
-  - Retorna status code 200 se a remoção deu certo e 404 caso o recibo não exista.
+  
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
@@ -95,6 +96,67 @@ Você pode [baixar o zip do projeto](https://github.com/alexfelipe/alura-ponto/a
 
 Também você pode [baixar o arquivo jar executável](https://github.com/alexfelipe/alura-ponto/releases/download/0.0.1/server.jar).
 
-<!-- 🛠️ Abrir e rodar o projeto
+🛠️ Abrir e rodar o projeto
 
-O projeto foi desenvolvido no IntelliJ IDEA 2021.2.3
+O projeto pode ser acesso de duas maneiras diferente:
+
+- Via código fonte
+- Rodando o arquivo JAR executável
+
+### Código fonte
+
+Para código fonte, você precisa de uma IDE compatível com o Gradle e com o Spring Boot utilizando Kotlin. Para esse projeto foi utilizado o IntelliJ IDEA 2021.2.3, você pode usar essa versão da IDE para garantir a compatibilidade ou uma versão mais ou outra ferramenta de sua preferência. Caso opte pelo IntelliJ, na tela de launcher, acesse a opção **Open** e procure o projeto, selecione-o e clique em **OK**. (Caso baixar o arquivo zip, lembre-se de descompactá-lo antes de procurar)
+
+Após o IntelliJ finalizar todas as tasks de indexação e do Gradle, acesse o arquivo `src\main\kotlin\br\com\alura\aluraponto\AluraPontoApplication.kt` e rode a função `main()`. Ao executar deve apresentar uma mensagem no console indicando que a aplicação foi inicializada, como por exemplo:
+
+```
+o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+b.c.a.a.AluraPontoApplicationKt          : Started AluraPontoApplicationKt in 6.279 seconds (JVM running for 6.949)
+```
+
+A partir desse momento, é só acessar a baseUrl (por padrão "http://localhost:8080") via navegador que apresentará a página inicial da aplicação!
+
+### JAR executável
+
+Com o executável, você precisa ter acesso a um cliente do Java 11. Acesse o arquivo JAR via terminal, e então, execute o seguinte comando: `java -jar nomeDoArquivo.jar` (provavelmente o arquivo foi nomeado como `server.jar`). Caso tudo deu certo, deve apresentar a seguinte mensagem via console:
+
+```
+o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+b.c.a.a.AluraPontoApplicationKt          : Started AluraPontoApplicationKt in 6.279 seconds (JVM running for 6.949)
+```
+
+A partir desse momento, é só acessar a baseUrl (por padrão "http://localhost:8080") via navegador que apresentará a página inicial da aplicação!
+
+**Observações**: evite rodar o executável em algum local que exija mais privilégios para executar ou criar arquivos.
+
+## 📝 Mais detalhes de execução do projeto
+
+Por padrão o Spring Boot vai rodar a aplicação na porta `8080`, mas é possível modificar a porta caso seja necessário
+
+### Modificando porta via código fonte
+
+No no arquivo `application-dev.yml` modifique o valor da `port: ${port:8080}` para um valor esperado:
+
+```
+server:
+  port: ${port:8081}
+```
+
+> Vamos considerar a modificação para a porta nas amostras `8081`.
+
+### Via task `bootRun` do Gradle
+
+Também é possível executar a seguinte task do gradle para executar o projeto em uma outra porta:
+
+```
+./gradlew bootRun --args='--server.port=8081
+```
+
+### Modificando porta com o JAR executável
+
+Além da execução via código, também é possível modificar a porta via command line pelo arquivo jar:
+
+```
+java -jar nomeDoArquivo.jar --server.port=8081
+```
+
