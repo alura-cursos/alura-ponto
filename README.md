@@ -96,7 +96,7 @@ Você pode [baixar o zip do projeto](https://github.com/alexfelipe/alura-ponto/a
 
 Também você pode [baixar o arquivo jar executável](https://github.com/alexfelipe/alura-ponto/releases/download/0.0.1/server.jar).
 
-🛠️ Abrir e rodar o projeto
+## 🛠️ Abrir e rodar o projeto
 
 O projeto pode ser acesso de duas maneiras diferente:
 
@@ -131,13 +131,17 @@ A partir desse momento, é só acessar a baseUrl (por padrão "http://localhost:
 
 **Observações**: evite rodar o executável em algum local que exija mais privilégios para executar ou criar arquivos.
 
+## 🧪 Testando a API com o Postman
+
+Você pode testar a aplicação utilizando o Postman também, você pode [acessar essa collection com todos os exemplos](https://go.postman.co/workspace/Alex-Felipe~05a58c64-6e22-44c6-b86a-c8f1802da9a7/collection/643343-9e595479-bfa5-438f-af9a-ee3ce7eeae83).
+
 ## 📝 Mais detalhes de execução do projeto
 
 Por padrão o Spring Boot vai rodar a aplicação na porta `8080`, mas é possível modificar a porta caso seja necessário
 
 ### Modificando porta via código fonte
 
-No no arquivo `application-dev.yml` modifique o valor da `port: ${port:8080}` para um valor esperado:
+No arquivo `application-dev.yml` modifique o valor da `port: ${port:8080}` para um valor esperado:
 
 ```
 server:
