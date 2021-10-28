@@ -129,7 +129,9 @@ A partir desse momento, é só acessar a baseUrl (por padrão "http://localhost:
 
 ## 🧪 Testando a API com o Postman
 
-Você pode testar a aplicação utilizando o Postman também, você pode [acessar essa collection com todos os exemplos](https://go.postman.co/workspace/Alex-Felipe~05a58c64-6e22-44c6-b86a-c8f1802da9a7/collection/643343-9e595479-bfa5-438f-af9a-ee3ce7eeae83).
+Você pode testar a aplicação utilizando o Postman também, você pode [baixar o zip com a collection com todos os exemplos](https://github.com/alexfelipe/alura-ponto/archive/refs/heads/postman.zip). 
+
+> Para fazer o teste, você precisa acessar o Postman, de preferência o cliente desktop, e fazer o [processo de importação](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-data-into-postman).
 
 ## 📝 Modificando porta de execução da aplicação
 
