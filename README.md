@@ -116,7 +116,7 @@ Após o IntelliJ finalizar todas as tasks, acesse o arquivo `src\main\kotlin\br\
 
 Com o executável, você precisa ter acesso a um cliente do Java 11. Acesse o arquivo JAR via terminal, e então, execute o seguinte comando: `java -jar nomeDoArquivo.jar` (provavelmente o arquivo foi nomeado como `server.jar`). 
 
-Caso tudo deu certo em alguma das possibilidades, deve apresentar a seguinte mensagem via console:
+Após executar em alguma das possibilidades, deve apresentar a seguinte mensagem via console:
 
 ```
 o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
