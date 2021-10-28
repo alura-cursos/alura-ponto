@@ -110,18 +110,13 @@ Para código fonte, você precisa de uma IDE compatível com o Gradle e com o Sp
 
 Caso opte pelo IntelliJ, na tela de launcher, acesse a opção **Open** e procure o projeto, selecione-o e clique em **OK**. (Caso baixar o arquivo zip, lembre-se de descompactá-lo antes de procurar)
 
-Após o IntelliJ finalizar todas as tasks de indexação e do Gradle, acesse o arquivo `src\main\kotlin\br\com\alura\aluraponto\AluraPontoApplication.kt` e rode a função `main()`. Ao executar deve apresentar uma mensagem no console indicando que a aplicação foi inicializada, como por exemplo:
-
-```
-o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-b.c.a.a.AluraPontoApplicationKt          : Started AluraPontoApplicationKt in 6.279 seconds (JVM running for 6.949)
-```
-
-A partir desse momento, é só acessar a baseUrl (por padrão "http://localhost:8080") via navegador que apresentará a página inicial da aplicação!
+Após o IntelliJ finalizar todas as tasks de indexação e do Gradle, acesse o arquivo `src\main\kotlin\br\com\alura\aluraponto\AluraPontoApplication.kt` e rode a função `main()`.
 
 ### JAR executável
 
-Com o executável, você precisa ter acesso a um cliente do Java 11. Acesse o arquivo JAR via terminal, e então, execute o seguinte comando: `java -jar nomeDoArquivo.jar` (provavelmente o arquivo foi nomeado como `server.jar`). Caso tudo deu certo, deve apresentar a seguinte mensagem via console:
+Com o executável, você precisa ter acesso a um cliente do Java 11. Acesse o arquivo JAR via terminal, e então, execute o seguinte comando: `java -jar nomeDoArquivo.jar` (provavelmente o arquivo foi nomeado como `server.jar`). 
+
+Caso tudo deu certo em alguma das possibilidades, deve apresentar a seguinte mensagem via console:
 
 ```
 o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
