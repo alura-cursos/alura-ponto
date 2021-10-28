@@ -110,7 +110,7 @@ Para código fonte, você precisa de uma IDE compatível com o Gradle e com o Sp
 
 Caso opte pelo IntelliJ, na tela de launcher, acesse a opção **Open** e procure o projeto, selecione-o e clique em **OK**. (Caso baixar o arquivo zip, lembre-se de descompactá-lo antes de procurar)
 
-Após o IntelliJ finalizar todas as tasks de indexação e do Gradle, acesse o arquivo `src\main\kotlin\br\com\alura\aluraponto\AluraPontoApplication.kt` e rode a função `main()`.
+Após o IntelliJ finalizar todas as tasks, acesse o arquivo `src\main\kotlin\br\com\alura\aluraponto\AluraPontoApplication.kt` e rode a função `main()`.
 
 ### JAR executável
 
