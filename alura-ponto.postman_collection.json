@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "5627b078-59fe-4b41-9c05-8e5c9f696f60",
+		"name": "Alura ponto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/recibos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/recibos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recibos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/recibos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"data\": \"22/10/2021 03:34\",\r\n        \"status\" : false,\r\n        \"localizacao\": {\r\n            \"latitude\": \"1\",\r\n            \"longitude\" : \"2\"\r\n        }\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/recibos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recibos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/recibos/40165db3-ad5a-4612-b12d-cff2726f2518",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/recibos/40165db3-ad5a-4612-b12d-cff2726f2518",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recibos",
+						"40165db3-ad5a-4612-b12d-cff2726f2518"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
