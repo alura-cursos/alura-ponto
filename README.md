@@ -125,7 +125,7 @@ b.c.a.a.AluraPontoApplicationKt          : Started AluraPontoApplicationKt in 6.
 
 A partir desse momento, é só acessar a baseUrl (por padrão "http://localhost:8080") via navegador que apresentará a página inicial da aplicação!
 
-**Observações**: evite rodar o JAR em algum local que exija mais privilégios para executar ou criar arquivos.
+> **Observações**: evite rodar o JAR em algum local que exija mais privilégios para executar ou criar arquivos.
 
 ## 🧪 Testando a API com o Postman
 
