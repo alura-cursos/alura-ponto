@@ -93,9 +93,9 @@ Bibliotecas do Spring Framework que foram utilizadas:
 ## 📁 Acesso ao projeto
 
 Você pode acessar o projeto de diferentes maneiras:
-- [baixar o zip do projeto](https://github.com/alexfelipe/alura-ponto/archive/refs/heads/dev.zip)
-- [acessar o código fonte](https://github.com/alexfelipe/alura-ponto/tree/dev)
-- [baixar o arquivo jar executável](https://github.com/alexfelipe/alura-ponto/releases/download/0.0.1/server.jar)
+- [baixar o zip do projeto](https://github.com/alura-cursos/alura-ponto/archive/refs/heads/dev.zip)
+- [acessar o código fonte](https://github.com/alura-cursos/alura-ponto/tree/dev)
+- [baixar o arquivo jar executável](https://github.com/alura-cursos/alura-ponto/releases/download/0.0.1/server.jar)
 
 ## 🛠️ Abrir e rodar o projeto
 
